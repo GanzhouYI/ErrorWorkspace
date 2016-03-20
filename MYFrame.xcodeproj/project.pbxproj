@@ -10,6 +10,8 @@
 		CF0886221C9ED36A008AB1A4 /* MYFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = CF0886211C9ED36A008AB1A4 /* MYFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF0886291C9ED36A008AB1A4 /* MYFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF08861E1C9ED36A008AB1A4 /* MYFrame.framework */; };
 		CF08862E1C9ED36A008AB1A4 /* MYFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08862D1C9ED36A008AB1A4 /* MYFrameTests.swift */; };
+		CF08863C1C9ED590008AB1A4 /* MyDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08863A1C9ED590008AB1A4 /* MyDateViewController.swift */; };
+		CF08863D1C9ED590008AB1A4 /* MyDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF08863B1C9ED590008AB1A4 /* MyDateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		CF0886281C9ED36A008AB1A4 /* MYFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF08862D1C9ED36A008AB1A4 /* MYFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYFrameTests.swift; sourceTree = "<group>"; };
 		CF08862F1C9ED36A008AB1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF08863A1C9ED590008AB1A4 /* MyDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDateViewController.swift; sourceTree = "<group>"; };
+		CF08863B1C9ED590008AB1A4 /* MyDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		CF0886141C9ED36A008AB1A4 = {
 			isa = PBXGroup;
 			children = (
+				CF08863A1C9ED590008AB1A4 /* MyDateViewController.swift */,
+				CF08863B1C9ED590008AB1A4 /* MyDateViewController.xib */,
 				CF0886201C9ED36A008AB1A4 /* MYFrame */,
 				CF08862C1C9ED36A008AB1A4 /* MYFrameTests */,
 				CF08861F1C9ED36A008AB1A4 /* Products */,
@@ -179,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF08863D1C9ED590008AB1A4 /* MyDateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF08863C1C9ED590008AB1A4 /* MyDateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +318,7 @@
 		CF0886331C9ED36A008AB1A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +329,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.MYFrame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CF0886341C9ED36A008AB1A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +389,7 @@
 				CF0886341C9ED36A008AB1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF0886351C9ED36A008AB1A4 /* Build configuration list for PBXNativeTarget "MYFrameTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +398,7 @@
 				CF0886371C9ED36A008AB1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
